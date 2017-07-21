@@ -190,6 +190,8 @@
 #define SYKFBoolIfIsToday(string) [SYKFDateUitil boolIfIsToday:string]
 
 这样调用起来非常方便了，需要了一句话就解决。
+
+
     NSString *dateString =@"2017-06-25 10:12:18";
     NSDate *getDate =SYKFDateTimeFromString(dateString);
     NSLog(@"转日期后月份是：%ld,日期与今天相差天数：%ld；",SYKFDateGetMonth(getDate),SYKFDateDaysAgo(getDate));
